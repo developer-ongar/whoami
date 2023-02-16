@@ -36,3 +36,11 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+// Unfortunately, AVSpeechSynthesisVoice does not support Kazakh in iOS, so there will be no sound when using AVSpeechSynthesizer to read Kazakh text.
+
+// If you want to use audio files for voiceover of Kazakh text, you need to create and add audio files with voiceover to your project, and then use AVPlayer to play these files.
+
+// Thus, the code can be modified to use the Kazakh language audio file instead of voice acting using AVSpeechSynthesizer:
+
+// Here, you can replace the file name and extension corresponding to your Kazakh audio file.
